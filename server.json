@@ -1,0 +1,39 @@
+{
+    "server": [
+        {"servername": "Default Server"},
+        {"gamemode": "Free Roam"},
+        {"game": "gta:iii"},
+        {"serverbrowser": true},
+        {"rcon": false},
+        {"maxplayers": 128},
+        {"port": 22000},
+        {"httpport": 22000},
+        {"processinterval": 50},
+        {"syncinterval": 60},
+        {"syncmethod": "replay"},
+        {"streamindistance": 100},
+        {"streamoutdistance": 200},
+        {"pickupstreamindistance": 50},
+        {"pickupstreamoutdistance": 100},
+        {"password": ""},
+        {"minclientversion": "1.1.26"},
+        {"updatecheck": true},
+        {"allowmoddedexecutables": false},
+        {"gunshops": true},
+        {"uniquestuntjumps": true},
+        {"stuntjumps": true},
+        {"toiletcam": true},
+        {
+            "name": "resources", 
+            "children": [
+                { "name": "resource", "attrs": {"src": "freeroam"} }
+            ]
+        },
+        {
+            "name": "modules",
+            "children": [
+                { "name": "module", "attrs": {"src": "Hello World"} }
+            ]
+        }
+    ]
+}
