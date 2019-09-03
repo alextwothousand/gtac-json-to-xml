@@ -3,11 +3,12 @@ import fs from 'fs';
 import path from 'path';
 import chalk from 'chalk';
 import { execFile } from 'child_process';
+import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from 'constants';
 
 let files: string[] = [];
 let exclusions: string[] = JSON.parse(`${fs.readFileSync('./exclude.json')}`);
 
-function transpileJson(files: string[]) {
+const transpileJson = (files: string[]) => {
     return new Promise((resolve, reject) => {
         console.log(chalk.yellow('=> Attempting to transpile JSON to XML...'));
 
@@ -35,7 +36,7 @@ function transpileJson(files: string[]) {
     });
 }
 
-function exec(exe: string) {
+const exec = (exe: string) => {
     return new Promise((resolve, reject) => {
         execFile(exe, (err, data) => {
             if (err) reject(chalk.red(`==> ${err}`));
