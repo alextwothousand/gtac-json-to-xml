@@ -3,7 +3,6 @@ import fs from 'fs';
 import path from 'path';
 import chalk from 'chalk';
 import { execFile } from 'child_process';
-import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from 'constants';
 
 let files: string[] = [];
 let exclusions: string[] = JSON.parse(`${fs.readFileSync('./exclude.json')}`);
