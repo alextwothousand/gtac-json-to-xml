@@ -1,0 +1,18 @@
+{
+    "meta": [
+        {
+            "name": "info", 
+            "attrs": {
+                "author": "borkdoggo69", "description": "A JSON to XML transpiler."
+            }
+        },
+        {
+            "name": "script",
+            "attrs": {
+                "src": "index.js",
+                "type": "server",
+                "language": "javascript"
+            }
+        }
+    ]
+}
